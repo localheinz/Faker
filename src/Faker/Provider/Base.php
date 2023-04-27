@@ -205,10 +205,11 @@ class Base
             ));
         }
 
+        $randomElements = [];
+
         $keys = array_keys($elements);
         $maxIndex = $numberOfElements - 1;
         $elementHasBeenSelectedAlready = [];
-        $randomElements = [];
         $numberOfRandomElements = 0;
 
         while ($numberOfRandomElements < $count) {
