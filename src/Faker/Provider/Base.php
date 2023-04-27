@@ -196,7 +196,7 @@ class Base
         }
 
         $allKeys = array_keys($elements);
-        $numKeys = count($allKeys);
+        $numKeys = count($elements);
 
         if (!$allowDuplicates && $numKeys < $count) {
             throw new \LengthException(sprintf(
