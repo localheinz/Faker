@@ -195,7 +195,6 @@ class Base
             $elements = \iterator_to_array($array, false);
         }
 
-        $allKeys = array_keys($elements);
         $numKeys = count($elements);
 
         if (!$allowDuplicates && $numKeys < $count) {
@@ -206,6 +205,7 @@ class Base
             ));
         }
 
+        $allKeys = array_keys($elements);
         $highKey = $numKeys - 1;
         $keys = [];
         $randomElements = [];
