@@ -243,6 +243,7 @@ class Base
         if (!$array || ($array instanceof \Traversable && !count($array))) {
             return null;
         }
+
         $elements = static::randomElements($array, 1);
 
         return $elements[0];
