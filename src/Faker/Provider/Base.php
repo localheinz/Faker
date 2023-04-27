@@ -195,18 +195,18 @@ class Base
             $elements = \iterator_to_array($array, false);
         }
 
-        $numKeys = count($elements);
+        $numberOfElements = count($elements);
 
-        if (!$allowDuplicates && $numKeys < $count) {
+        if (!$allowDuplicates && $numberOfElements < $count) {
             throw new \LengthException(sprintf(
                 'Cannot get %d elements, only %d in array',
                 $count,
-                $numKeys,
+                $numberOfElements,
             ));
         }
 
         $allKeys = array_keys($elements);
-        $highKey = $numKeys - 1;
+        $highKey = $numberOfElements - 1;
         $keys = [];
         $randomElements = [];
         $numberOfRandomElements = 0;
