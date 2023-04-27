@@ -205,7 +205,7 @@ class Base
             ));
         }
 
-        $allKeys = array_keys($elements);
+        $keys = array_keys($elements);
         $highKey = $numberOfElements - 1;
         $elementHasBeenSelectedAlready = [];
         $randomElements = [];
@@ -222,7 +222,7 @@ class Base
                 $elementHasBeenSelectedAlready[$index] = true;
             }
 
-            $key = $allKeys[$index];
+            $key = $keys[$index];
 
             $randomElements[] = $elements[$key];
 
