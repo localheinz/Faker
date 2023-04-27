@@ -203,7 +203,8 @@ class Base
         }
 
         $highKey = $numKeys - 1;
-        $keys = $elements = [];
+        $keys = [];
+        $elements = [];
         $numElements = 0;
 
         while ($numElements < $count) {
