@@ -206,13 +206,13 @@ class Base
         }
 
         $keys = array_keys($elements);
-        $highKey = $numberOfElements - 1;
+        $maxIndex = $numberOfElements - 1;
         $elementHasBeenSelectedAlready = [];
         $randomElements = [];
         $numberOfRandomElements = 0;
 
         while ($numberOfRandomElements < $count) {
-            $index = mt_rand(0, $highKey);
+            $index = mt_rand(0, $maxIndex);
 
             if (!$allowDuplicates) {
                 if (isset($elementHasBeenSelectedAlready[$index])) {
