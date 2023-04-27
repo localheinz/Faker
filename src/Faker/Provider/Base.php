@@ -240,15 +240,17 @@ class Base
      */
     public static function randomElement($array = ['a', 'b', 'c'])
     {
+        $elements = $array;
+
         if ($array instanceof \Traversable) {
-            $array = iterator_to_array($array, false);
+            $elements = iterator_to_array($array, false);
         }
 
-        if ($array === []) {
+        if ($elements === []) {
             return null;
         }
 
-        $randomElements = static::randomElements($array, 1);
+        $randomElements = static::randomElements($elements, 1);
 
         return $randomElements[0];
     }
