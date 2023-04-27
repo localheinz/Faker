@@ -207,7 +207,7 @@ class Base
 
         $allKeys = array_keys($elements);
         $highKey = $numberOfElements - 1;
-        $keys = [];
+        $elementHasBeenSelectedAlready = [];
         $randomElements = [];
         $numberOfRandomElements = 0;
 
@@ -215,11 +215,11 @@ class Base
             $index = mt_rand(0, $highKey);
 
             if (!$allowDuplicates) {
-                if (isset($keys[$index])) {
+                if (isset($elementHasBeenSelectedAlready[$index])) {
                     continue;
                 }
 
-                $keys[$index] = true;
+                $elementHasBeenSelectedAlready[$index] = true;
             }
 
             $key = $allKeys[$index];
