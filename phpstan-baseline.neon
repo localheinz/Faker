@@ -611,11 +611,6 @@ parameters:
 			path: src/Faker/ORM/Spot/Populator.php
 
 		-
-			message: "#^Instanceof between array and Traversable will always evaluate to false\\.$#"
-			count: 1
-			path: src/Faker/Provider/Base.php
-
-		-
 			message: """
 				#^Instantiation of deprecated class Faker\\\\DefaultGenerator\\:
 				Use ChanceGenerator instead$#

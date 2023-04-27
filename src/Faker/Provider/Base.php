@@ -236,7 +236,7 @@ class Base
     /**
      * Returns a random element from a passed array
      *
-     * @param array $array
+     * @param array|\Traversable $array
      */
     public static function randomElement($array = ['a', 'b', 'c'])
     {
