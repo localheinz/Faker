@@ -209,9 +209,9 @@ class Base
         $highKey = $numKeys - 1;
         $keys = [];
         $randomElements = [];
-        $numElements = 0;
+        $numberOfRandomElements = 0;
 
-        while ($numElements < $count) {
+        while ($numberOfRandomElements < $count) {
             $num = mt_rand(0, $highKey);
 
             if (!$allowDuplicates) {
@@ -224,7 +224,7 @@ class Base
 
             $randomElements[] = $elements[$allKeys[$num]];
 
-            ++$numElements;
+            ++$numberOfRandomElements;
         }
 
         return $randomElements;
