@@ -240,11 +240,11 @@ class Base
      */
     public static function randomElement($array = ['a', 'b', 'c'])
     {
-        if ($array === []) {
-            return null;
+        if ($array instanceof \Traversable) {
+            $array = iterator_to_array($array, false);
         }
 
-        if ($array instanceof \Traversable && !count($array)) {
+        if ($array === []) {
             return null;
         }
 
