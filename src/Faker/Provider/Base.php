@@ -222,7 +222,9 @@ class Base
                 $keys[$num] = true;
             }
 
-            $randomElements[] = $elements[$allKeys[$num]];
+            $key = $allKeys[$num];
+
+            $randomElements[] = $elements[$key];
 
             ++$numberOfRandomElements;
         }
