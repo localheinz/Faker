@@ -199,7 +199,11 @@ class Base
         $numKeys = count($allKeys);
 
         if (!$allowDuplicates && $numKeys < $count) {
-            throw new \LengthException(sprintf('Cannot get %d elements, only %d in array', $count, $numKeys));
+            throw new \LengthException(sprintf(
+                'Cannot get %d elements, only %d in array',
+                $count,
+                $numKeys,
+            ));
         }
 
         $highKey = $numKeys - 1;
@@ -214,10 +218,12 @@ class Base
                 if (isset($keys[$num])) {
                     continue;
                 }
+
                 $keys[$num] = true;
             }
 
             $elements[] = $arr[$allKeys[$num]];
+
             ++$numElements;
         }
 
