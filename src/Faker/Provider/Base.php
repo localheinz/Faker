@@ -244,9 +244,9 @@ class Base
             return null;
         }
 
-        $elements = static::randomElements($array, 1);
+        $randomElements = static::randomElements($array, 1);
 
-        return $elements[0];
+        return $randomElements[0];
     }
 
     /**
