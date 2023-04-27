@@ -212,17 +212,17 @@ class Base
         $numberOfRandomElements = 0;
 
         while ($numberOfRandomElements < $count) {
-            $num = mt_rand(0, $highKey);
+            $index = mt_rand(0, $highKey);
 
             if (!$allowDuplicates) {
-                if (isset($keys[$num])) {
+                if (isset($keys[$index])) {
                     continue;
                 }
 
-                $keys[$num] = true;
+                $keys[$index] = true;
             }
 
-            $key = $allKeys[$num];
+            $key = $allKeys[$index];
 
             $randomElements[] = $elements[$key];
 
