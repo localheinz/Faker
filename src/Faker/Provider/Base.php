@@ -208,7 +208,7 @@ class Base
 
         $highKey = $numKeys - 1;
         $keys = [];
-        $elements = [];
+        $randomElements = [];
         $numElements = 0;
 
         while ($numElements < $count) {
@@ -222,12 +222,12 @@ class Base
                 $keys[$num] = true;
             }
 
-            $elements[] = $arr[$allKeys[$num]];
+            $randomElements[] = $arr[$allKeys[$num]];
 
             ++$numElements;
         }
 
-        return $elements;
+        return $randomElements;
     }
 
     /**
