@@ -189,13 +189,13 @@ class Base
      */
     public static function randomElements($array = ['a', 'b', 'c'], $count = 1, $allowDuplicates = false)
     {
-        $arr = $array;
+        $elements = $array;
 
         if ($array instanceof \Traversable) {
-            $arr = \iterator_to_array($array, false);
+            $elements = \iterator_to_array($array, false);
         }
 
-        $allKeys = array_keys($arr);
+        $allKeys = array_keys($elements);
         $numKeys = count($allKeys);
 
         if (!$allowDuplicates && $numKeys < $count) {
@@ -222,7 +222,7 @@ class Base
                 $keys[$num] = true;
             }
 
-            $randomElements[] = $arr[$allKeys[$num]];
+            $randomElements[] = $elements[$allKeys[$num]];
 
             ++$numElements;
         }
