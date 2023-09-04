@@ -52,8 +52,8 @@ class Coordinates implements Extension
     public function localCoordinates(): array
     {
         return [
-            'latitude' => static::latitude(),
-            'longitude' => static::longitude(),
+            'latitude' => $this->latitude(),
+            'longitude' => $this->longitude(),
         ];
     }
 
