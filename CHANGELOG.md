@@ -2,7 +2,13 @@
 
 ## [Unreleased](https://github.com/FakerPHP/Faker/compare/v1.23.0...main)
 
+### Fixes
+
 - Fixed polish license plates (#685)
+
+### Removed
+
+- Removed functionality for populating entities for ORMs (CakePHP, Doctrine, Mandango, Propel, Propel2, Spot) (#686)
 
 ## [2023-06-12, v1.23.0](https://github.com/FakerPHP/Faker/compare/v1.22.0..v1.23.0)
 
