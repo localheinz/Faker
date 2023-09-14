@@ -4,6 +4,9 @@ namespace Faker\Provider\kk_KZ;
 
 use Faker\Provider\DateTime;
 
+/**
+ * @deprecated
+ */
 class Person extends \Faker\Provider\Person
 {
     public const GENDER_MALE = 0;

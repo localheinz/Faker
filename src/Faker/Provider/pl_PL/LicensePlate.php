@@ -9,6 +9,9 @@ use Faker\Provider\Base;
  * {@link} https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20220001847
  * {@link} https://pl.wikipedia.org/wiki/Tablice_rejestracyjne_w_Polsce#Tablice_standardowe
  */
+/**
+ * @deprecated
+ */
 class LicensePlate extends Base
 {
     /**

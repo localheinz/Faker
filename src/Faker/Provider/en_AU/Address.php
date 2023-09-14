@@ -5,6 +5,9 @@ namespace Faker\Provider\en_AU;
 /**
  * @see http://www.ipaustralia.gov.au/about-us/corporate/address-standards/
  */
+/**
+ * @deprecated
+ */
 class Address extends \Faker\Provider\en_US\Address
 {
     protected static $cityPrefix = ['North', 'East', 'West', 'South', 'New', 'Lake', 'Port', 'St.'];

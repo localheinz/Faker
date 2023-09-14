@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\ko_KR;
 
+/**
+ * @deprecated
+ */
 class Person extends \Faker\Provider\Person
 {
     /**

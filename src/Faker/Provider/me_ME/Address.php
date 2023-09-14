@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\me_ME;
 
+/**
+ * @deprecated
+ */
 class Address extends \Faker\Provider\Address
 {
     protected static $postcode = ['#####'];

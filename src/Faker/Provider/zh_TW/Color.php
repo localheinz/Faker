@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\zh_TW;
 
+/**
+ * @deprecated
+ */
 class Color extends \Faker\Provider\Color
 {
     /**

@@ -21,6 +21,16 @@ parameters:
 			path: src/Faker/Container/ContainerBuilder.php
 
 		-
+			message: "#^Call to method date\\(\\) of deprecated class Faker\\\\Provider\\\\DateTime\\.$#"
+			count: 1
+			path: src/Faker/Core/Version.php
+
+		-
+			message: "#^Instantiation of deprecated class Faker\\\\Provider\\\\Base\\.$#"
+			count: 1
+			path: src/Faker/Documentor.php
+
+		-
 			message: "#^Method Faker\\\\Generator\\:\\:optional\\(\\) should return Faker\\\\Generator but returns Faker\\\\ChanceGenerator\\.$#"
 			count: 1
 			path: src/Faker/Generator.php
@@ -34,6 +44,11 @@ parameters:
 			message: "#^Method Faker\\\\Generator\\:\\:valid\\(\\) should return Faker\\\\Generator but returns Faker\\\\ValidGenerator\\.$#"
 			count: 1
 			path: src/Faker/Generator.php
+
+		-
+			message: "#^Call to method toLower\\(\\) of deprecated class Faker\\\\Provider\\\\Base\\.$#"
+			count: 1
+			path: src/Faker/Guesser/Name.php
 
 		-
 			message: "#^Unreachable statement \\- code above always terminates\\.$#"
@@ -127,6 +142,11 @@ parameters:
 
 		-
 			message: "#^Call to method persist\\(\\) on an unknown class Mandango\\\\Mandango\\.$#"
+			count: 1
+			path: src/Faker/ORM/Mandango/EntityPopulator.php
+
+		-
+			message: "#^Call to method randomElement\\(\\) of deprecated class Faker\\\\Provider\\\\Base\\.$#"
 			count: 1
 			path: src/Faker/ORM/Mandango/EntityPopulator.php
 
@@ -297,6 +317,11 @@ parameters:
 
 		-
 			message: "#^Call to method getTable\\(\\) on an unknown class ColumnMap\\.$#"
+			count: 1
+			path: src/Faker/ORM/Propel/EntityPopulator.php
+
+		-
+			message: "#^Call to method toLower\\(\\) of deprecated class Faker\\\\Provider\\\\Base\\.$#"
 			count: 1
 			path: src/Faker/ORM/Propel/EntityPopulator.php
 
@@ -496,6 +521,11 @@ parameters:
 			path: src/Faker/ORM/Propel2/EntityPopulator.php
 
 		-
+			message: "#^Call to method toLower\\(\\) of deprecated class Faker\\\\Provider\\\\Base\\.$#"
+			count: 1
+			path: src/Faker/ORM/Propel2/EntityPopulator.php
+
+		-
 			message: "#^Parameter \\$columnMap of method Faker\\\\ORM\\\\Propel2\\\\EntityPopulator\\:\\:isColumnBehavior\\(\\) has invalid type Propel\\\\Runtime\\\\Map\\\\ColumnMap\\.$#"
 			count: 1
 			path: src/Faker/ORM/Propel2/EntityPopulator.php
@@ -606,16 +636,18 @@ parameters:
 			path: src/Faker/ORM/Spot/Populator.php
 
 		-
-			message: "#^Class UnitEnum not found\\.$#"
-			count: 2
-			path: src/Faker/Provider/Base.php
+			message: "#^Class Faker\\\\Provider\\\\Address extends deprecated class Faker\\\\Provider\\\\Base\\.$#"
+			count: 1
+			path: src/Faker/Provider/Address.php
 
 		-
-			message: """
-				#^Instantiation of deprecated class Faker\\\\DefaultGenerator\\:
-				Use ChanceGenerator instead$#
-			"""
+			message: "#^Class Faker\\\\Provider\\\\Barcode extends deprecated class Faker\\\\Provider\\\\Base\\.$#"
 			count: 1
+			path: src/Faker/Provider/Barcode.php
+
+		-
+			message: "#^Class UnitEnum not found\\.$#"
+			count: 2
 			path: src/Faker/Provider/Base.php
 
 		-
@@ -644,6 +676,26 @@ parameters:
 			path: src/Faker/Provider/Base.php
 
 		-
+			message: "#^Class Faker\\\\Provider\\\\Biased extends deprecated class Faker\\\\Provider\\\\Base\\.$#"
+			count: 1
+			path: src/Faker/Provider/Biased.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\Color extends deprecated class Faker\\\\Provider\\\\Base\\.$#"
+			count: 1
+			path: src/Faker/Provider/Color.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\Company extends deprecated class Faker\\\\Provider\\\\Base\\.$#"
+			count: 1
+			path: src/Faker/Provider/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\DateTime extends deprecated class Faker\\\\Provider\\\\Base\\.$#"
+			count: 1
+			path: src/Faker/Provider/DateTime.php
+
+		-
 			message: "#^Method Faker\\\\Provider\\\\DateTime\\:\\:resolveTimezone\\(\\) never returns null so it can be removed from the return type\\.$#"
 			count: 1
 			path: src/Faker/Provider/DateTime.php
@@ -659,9 +711,34 @@ parameters:
 			path: src/Faker/Provider/DateTime.php
 
 		-
+			message: "#^Class Faker\\\\Provider\\\\File extends deprecated class Faker\\\\Provider\\\\Base\\.$#"
+			count: 1
+			path: src/Faker/Provider/File.php
+
+		-
 			message: "#^Method Faker\\\\Provider\\\\File\\:\\:file\\(\\) should return string but returns false\\.$#"
 			count: 1
 			path: src/Faker/Provider/File.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\HtmlLorem extends deprecated class Faker\\\\Provider\\\\Base\\.$#"
+			count: 1
+			path: src/Faker/Provider/HtmlLorem.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\Image extends deprecated class Faker\\\\Provider\\\\Base\\.$#"
+			count: 1
+			path: src/Faker/Provider/Image.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\Internet extends deprecated class Faker\\\\Provider\\\\Base\\.$#"
+			count: 1
+			path: src/Faker/Provider/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\Lorem extends deprecated class Faker\\\\Provider\\\\Base\\.$#"
+			count: 1
+			path: src/Faker/Provider/Lorem.php
 
 		-
 			message: "#^Unreachable statement \\- code above always terminates\\.$#"
@@ -672,6 +749,16 @@ parameters:
 			message: "#^Variable \\$text in empty\\(\\) always exists and is always falsy\\.$#"
 			count: 1
 			path: src/Faker/Provider/Lorem.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\Medical extends deprecated class Faker\\\\Provider\\\\Base\\.$#"
+			count: 1
+			path: src/Faker/Provider/Medical.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\Miscellaneous extends deprecated class Faker\\\\Provider\\\\Base\\.$#"
+			count: 1
+			path: src/Faker/Provider/Miscellaneous.php
 
 		-
 			message: "#^Parameter \\#1 \\$str of function md5 expects string, int given\\.$#"
@@ -689,14 +776,94 @@ parameters:
 			path: src/Faker/Provider/Miscellaneous.php
 
 		-
+			message: "#^Class Faker\\\\Provider\\\\Payment extends deprecated class Faker\\\\Provider\\\\Base\\.$#"
+			count: 1
+			path: src/Faker/Provider/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\Person extends deprecated class Faker\\\\Provider\\\\Base\\.$#"
+			count: 1
+			path: src/Faker/Provider/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\Base\\.$#"
+			count: 1
+			path: src/Faker/Provider/PhoneNumber.php
+
+		-
 			message: "#^Method Faker\\\\Provider\\\\PhoneNumber\\:\\:imei\\(\\) should return int but returns string\\.$#"
 			count: 1
 			path: src/Faker/Provider/PhoneNumber.php
 
 		-
+			message: "#^Class Faker\\\\Provider\\\\Text extends deprecated class Faker\\\\Provider\\\\Base\\.$#"
+			count: 1
+			path: src/Faker/Provider/Text.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\UserAgent extends deprecated class Faker\\\\Provider\\\\Base\\.$#"
+			count: 1
+			path: src/Faker/Provider/UserAgent.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\Uuid extends deprecated class Faker\\\\Provider\\\\Base\\.$#"
+			count: 1
+			path: src/Faker/Provider/Uuid.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ar_EG\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/ar_EG/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ar_EG\\\\Color extends deprecated class Faker\\\\Provider\\\\Color\\.$#"
+			count: 1
+			path: src/Faker/Provider/ar_EG/Color.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ar_EG\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/ar_EG/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ar_EG\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/ar_EG/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ar_EG\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/ar_EG/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ar_EG\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/ar_EG/Person.php
+
+		-
 			message: "#^Unsafe access to private property Faker\\\\Provider\\\\ar_EG\\\\Person\\:\\:\\$prefix through static\\:\\:\\.$#"
 			count: 1
 			path: src/Faker/Provider/ar_EG/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ar_JO\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/ar_JO/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ar_JO\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/ar_JO/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ar_JO\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/ar_JO/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ar_JO\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/ar_JO/Person.php
 
 		-
 			message: "#^Unsafe access to private property Faker\\\\Provider\\\\ar_JO\\\\Person\\:\\:\\$prefix through static\\:\\:\\.$#"
@@ -709,9 +876,89 @@ parameters:
 			path: src/Faker/Provider/ar_SA/Address.php
 
 		-
+			message: "#^Class Faker\\\\Provider\\\\ar_SA\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/ar_SA/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ar_SA\\\\Color extends deprecated class Faker\\\\Provider\\\\Color\\.$#"
+			count: 1
+			path: src/Faker/Provider/ar_SA/Color.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ar_SA\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/ar_SA/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ar_SA\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/ar_SA/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ar_SA\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/ar_SA/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ar_SA\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/ar_SA/Person.php
+
+		-
 			message: "#^Unsafe access to private property Faker\\\\Provider\\\\ar_SA\\\\Person\\:\\:\\$prefix through static\\:\\:\\.$#"
 			count: 1
 			path: src/Faker/Provider/ar_SA/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\at_AT\\\\Payment extends deprecated class Faker\\\\Provider\\\\de_AT\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/at_AT/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\bg_BG\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/bg_BG/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\bg_BG\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/bg_BG/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\bg_BG\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/bg_BG/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\bg_BG\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/bg_BG/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\bn_BD\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/bn_BD/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\bn_BD\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/bn_BD/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\bn_BD\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/bn_BD/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\bn_BD\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/bn_BD/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\cs_CZ\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/cs_CZ/Address.php
 
 		-
 			message: "#^Unsafe access to private property Faker\\\\Provider\\\\cs_CZ\\\\Address\\:\\:\\$regions through static\\:\\:\\.$#"
@@ -724,9 +971,34 @@ parameters:
 			path: src/Faker/Provider/cs_CZ/Company.php
 
 		-
+			message: "#^Class Faker\\\\Provider\\\\cs_CZ\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/cs_CZ/Company.php
+
+		-
 			message: "#^Binary operation \"\\-\" between string and 1 results in an error\\.$#"
 			count: 2
 			path: src/Faker/Provider/cs_CZ/DateTime.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\cs_CZ\\\\DateTime extends deprecated class Faker\\\\Provider\\\\DateTime\\.$#"
+			count: 1
+			path: src/Faker/Provider/cs_CZ/DateTime.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\cs_CZ\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/cs_CZ/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\cs_CZ\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/cs_CZ/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\cs_CZ\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/cs_CZ/Person.php
 
 		-
 			message: "#^Static call to instance method Faker\\\\Provider\\\\cs_CZ\\\\Person\\:\\:birthNumber\\(\\)\\.$#"
@@ -734,9 +1006,229 @@ parameters:
 			path: src/Faker/Provider/cs_CZ/Person.php
 
 		-
+			message: "#^Class Faker\\\\Provider\\\\cs_CZ\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/cs_CZ/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\da_DK\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/da_DK/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\da_DK\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/da_DK/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\da_DK\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/da_DK/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\da_DK\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/da_DK/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\da_DK\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/da_DK/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\da_DK\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/da_DK/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\de_AT\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/de_AT/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\de_AT\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/de_AT/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\de_AT\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/de_AT/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\de_AT\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/de_AT/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\de_AT\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/de_AT/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\de_AT\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/de_AT/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\de_AT\\\\Text extends deprecated class Faker\\\\Provider\\\\de_DE\\\\Text\\.$#"
+			count: 1
+			path: src/Faker/Provider/de_AT/Text.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\de_CH\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/de_CH/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\de_CH\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/de_CH/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\de_CH\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/de_CH/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\de_CH\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/de_CH/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\de_CH\\\\Person extends deprecated class Faker\\\\Provider\\\\de_DE\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/de_CH/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\de_CH\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/de_CH/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\de_DE\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/de_DE/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\de_DE\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/de_DE/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\de_DE\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/de_DE/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\de_DE\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/de_DE/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\de_DE\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/de_DE/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\de_DE\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/de_DE/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\el_CY\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/el_CY/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\el_CY\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/el_CY/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\el_CY\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/el_CY/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\el_CY\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/el_CY/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\el_CY\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/el_CY/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\el_CY\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/el_CY/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\el_GR\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/el_GR/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\el_GR\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/el_GR/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\el_GR\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/el_GR/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\el_GR\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/el_GR/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\el_GR\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/el_GR/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_AU\\\\Address extends deprecated class Faker\\\\Provider\\\\en_US\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_AU/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_AU\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_AU/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_AU\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_AU/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_CA\\\\Address extends deprecated class Faker\\\\Provider\\\\en_US\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_CA/Address.php
+
+		-
 			message: "#^Parameter \\#2 \\$callback of function preg_replace_callback expects callable\\(array\\<int\\|string, string\\>\\)\\: string, array\\{class\\-string\\<static\\(Faker\\\\Provider\\\\en_CA\\\\Address\\)\\>, 'randomDigit'\\} given\\.$#"
 			count: 1
 			path: src/Faker/Provider/en_CA/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_CA\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\en_US\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_CA/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_GB\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_GB/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_GB\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_GB/Company.php
 
 		-
 			message: "#^Unsafe call to private method Faker\\\\Provider\\\\en_GB\\\\Company\\:\\:generateBranchTraderVatNumber\\(\\) through static\\:\\:\\.$#"
@@ -759,6 +1251,66 @@ parameters:
 			path: src/Faker/Provider/en_GB/Company.php
 
 		-
+			message: "#^Class Faker\\\\Provider\\\\en_GB\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_GB/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_GB\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_GB/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_GB\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_GB/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_GB\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_GB/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_HK\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_HK/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_HK\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_HK/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_HK\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_HK/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_IN\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_IN/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_IN\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_IN/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_IN\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_IN/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_IN\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_IN/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_NG\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_NG/Address.php
+
+		-
 			message: "#^Unsafe access to private property Faker\\\\Provider\\\\en_NG\\\\Address\\:\\:\\$county through static\\:\\:\\.$#"
 			count: 1
 			path: src/Faker/Provider/en_NG/Address.php
@@ -767,6 +1319,126 @@ parameters:
 			message: "#^Unsafe access to private property Faker\\\\Provider\\\\en_NG\\\\Address\\:\\:\\$regions through static\\:\\:\\.$#"
 			count: 1
 			path: src/Faker/Provider/en_NG/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_NG\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_NG/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_NG\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_NG/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_NG\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_NG/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_NZ\\\\Address extends deprecated class Faker\\\\Provider\\\\en_US\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_NZ/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_NZ\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_NZ/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_NZ\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_NZ/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_PH\\\\Address extends deprecated class Faker\\\\Provider\\\\en_US\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_PH/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_PH\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_PH/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_SG\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_SG/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_SG\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_SG/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_SG\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_SG/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_UG\\\\Address extends deprecated class Faker\\\\Provider\\\\en_US\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_UG/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_UG\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_UG/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_UG\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_UG/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_UG\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_UG/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_US\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_US/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_US\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_US/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_US\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_US/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_US\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_US/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_US\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_US/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_ZA\\\\Address extends deprecated class Faker\\\\Provider\\\\en_US\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_ZA/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_ZA\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_ZA/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_ZA\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_ZA/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\en_ZA\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_ZA/Person.php
 
 		-
 			message: "#^Parameter \\#1 \\$input of function str_pad expects string, int given\\.$#"
@@ -779,14 +1451,114 @@ parameters:
 			path: src/Faker/Provider/en_ZA/Person.php
 
 		-
+			message: "#^Class Faker\\\\Provider\\\\en_ZA\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/en_ZA/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\es_AR\\\\Address extends deprecated class Faker\\\\Provider\\\\es_ES\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/es_AR/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\es_AR\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/es_AR/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\es_AR\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/es_AR/Person.php
+
+		-
 			message: "#^Unsafe access to private property Faker\\\\Provider\\\\es_AR\\\\Person\\:\\:\\$suffix through static\\:\\:\\.$#"
 			count: 1
 			path: src/Faker/Provider/es_AR/Person.php
 
 		-
+			message: "#^Class Faker\\\\Provider\\\\es_AR\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/es_AR/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\es_ES\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/es_ES/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\es_ES\\\\Color extends deprecated class Faker\\\\Provider\\\\Color\\.$#"
+			count: 1
+			path: src/Faker/Provider/es_ES/Color.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\es_ES\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/es_ES/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\es_ES\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/es_ES/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\es_ES\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/es_ES/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\es_ES\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/es_ES/Person.php
+
+		-
 			message: "#^Unsafe access to private property Faker\\\\Provider\\\\es_ES\\\\Person\\:\\:\\$suffix through static\\:\\:\\.$#"
 			count: 1
 			path: src/Faker/Provider/es_ES/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\es_ES\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/es_ES/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\es_PE\\\\Address extends deprecated class Faker\\\\Provider\\\\es_ES\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/es_PE/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\es_PE\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/es_PE/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\es_PE\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/es_PE/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\es_PE\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/es_PE/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\es_VE\\\\Address extends deprecated class Faker\\\\Provider\\\\es_ES\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/es_VE/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\es_VE\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/es_VE/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\es_VE\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/es_VE/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\es_VE\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/es_VE/Person.php
 
 		-
 			message: "#^Unsafe access to private property Faker\\\\Provider\\\\es_VE\\\\Person\\:\\:\\$nationalityId through static\\:\\:\\.$#"
@@ -799,7 +1571,37 @@ parameters:
 			path: src/Faker/Provider/es_VE/Person.php
 
 		-
+			message: "#^Class Faker\\\\Provider\\\\es_VE\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/es_VE/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\et_EE\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/et_EE/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fa_IR\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/fa_IR/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fa_IR\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/fa_IR/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fa_IR\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/fa_IR/Internet.php
+
+		-
 			message: "#^Binary operation \"\\*\" between string and int\\<2, 10\\> results in an error\\.$#"
+			count: 1
+			path: src/Faker/Provider/fa_IR/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fa_IR\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
 			count: 1
 			path: src/Faker/Provider/fa_IR/Person.php
 
@@ -807,6 +1609,141 @@ parameters:
 			message: "#^Method Faker\\\\Provider\\\\fa_IR\\\\Person\\:\\:createAreaCode\\(\\) never returns int so it can be removed from the return type\\.$#"
 			count: 1
 			path: src/Faker/Provider/fa_IR/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fa_IR\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/fa_IR/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fi_FI\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/fi_FI/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fi_FI\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/fi_FI/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fi_FI\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/fi_FI/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fi_FI\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/fi_FI/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fi_FI\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/fi_FI/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fi_FI\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/fi_FI/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fr_BE\\\\Address extends deprecated class Faker\\\\Provider\\\\fr_FR\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/fr_BE/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fr_BE\\\\Color extends deprecated class Faker\\\\Provider\\\\fr_FR\\\\Color\\.$#"
+			count: 1
+			path: src/Faker/Provider/fr_BE/Color.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fr_BE\\\\Company extends deprecated class Faker\\\\Provider\\\\fr_FR\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/fr_BE/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fr_BE\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/fr_BE/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fr_BE\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/fr_BE/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fr_BE\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/fr_BE/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fr_BE\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/fr_BE/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fr_CA\\\\Address extends deprecated class Faker\\\\Provider\\\\fr_FR\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/fr_CA/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fr_CA\\\\Color extends deprecated class Faker\\\\Provider\\\\fr_FR\\\\Color\\.$#"
+			count: 1
+			path: src/Faker/Provider/fr_CA/Color.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fr_CA\\\\Company extends deprecated class Faker\\\\Provider\\\\fr_FR\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/fr_CA/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fr_CA\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/fr_CA/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fr_CH\\\\Address extends deprecated class Faker\\\\Provider\\\\fr_FR\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/fr_CH/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fr_CH\\\\Color extends deprecated class Faker\\\\Provider\\\\fr_FR\\\\Color\\.$#"
+			count: 1
+			path: src/Faker/Provider/fr_CH/Color.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fr_CH\\\\Company extends deprecated class Faker\\\\Provider\\\\fr_FR\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/fr_CH/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fr_CH\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/fr_CH/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fr_CH\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/fr_CH/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fr_CH\\\\Person extends deprecated class Faker\\\\Provider\\\\fr_FR\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/fr_CH/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fr_CH\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/fr_CH/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fr_CH\\\\Text extends deprecated class Faker\\\\Provider\\\\fr_FR\\\\Text\\.$#"
+			count: 1
+			path: src/Faker/Provider/fr_CH/Text.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fr_FR\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/fr_FR/Address.php
 
 		-
 			message: "#^Unsafe access to private property Faker\\\\Provider\\\\fr_FR\\\\Address\\:\\:\\$departments through static\\:\\:\\.$#"
@@ -819,9 +1756,109 @@ parameters:
 			path: src/Faker/Provider/fr_FR/Address.php
 
 		-
+			message: "#^Class Faker\\\\Provider\\\\fr_FR\\\\Color extends deprecated class Faker\\\\Provider\\\\Color\\.$#"
+			count: 1
+			path: src/Faker/Provider/fr_FR/Color.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fr_FR\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/fr_FR/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fr_FR\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/fr_FR/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fr_FR\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/fr_FR/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fr_FR\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/fr_FR/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\fr_FR\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/fr_FR/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\he_IL\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/he_IL/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\he_IL\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/he_IL/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\he_IL\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/he_IL/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\he_IL\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/he_IL/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\he_IL\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/he_IL/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\hr_HR\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/hr_HR/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\hr_HR\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/hr_HR/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\hr_HR\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/hr_HR/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\hr_HR\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/hr_HR/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\hr_HR\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/hr_HR/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\hu_HU\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/hu_HU/Address.php
+
+		-
 			message: "#^Method Faker\\\\Provider\\\\hu_HU\\\\Address\\:\\:localCoordinates\\(\\) has invalid return type Faker\\\\Provider\\\\hu_HU\\\\latitude\\.$#"
 			count: 1
 			path: src/Faker/Provider/hu_HU/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\hu_HU\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/hu_HU/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\hu_HU\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/hu_HU/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\hu_HU\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/hu_HU/Person.php
 
 		-
 			message: "#^Unsafe access to private property Faker\\\\Provider\\\\hu_HU\\\\Person\\:\\:\\$suffix through static\\:\\:\\.$#"
@@ -829,9 +1866,69 @@ parameters:
 			path: src/Faker/Provider/hu_HU/Person.php
 
 		-
+			message: "#^Class Faker\\\\Provider\\\\hu_HU\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/hu_HU/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\hy_AM\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/hy_AM/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\hy_AM\\\\Color extends deprecated class Faker\\\\Provider\\\\Color\\.$#"
+			count: 1
+			path: src/Faker/Provider/hy_AM/Color.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\hy_AM\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/hy_AM/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\hy_AM\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/hy_AM/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\hy_AM\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/hy_AM/Person.php
+
+		-
 			message: "#^Unsafe access to private property Faker\\\\Provider\\\\hy_AM\\\\Person\\:\\:\\$suffix through static\\:\\:\\.$#"
 			count: 1
 			path: src/Faker/Provider/hy_AM/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\hy_AM\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/hy_AM/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\id_ID\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/id_ID/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\id_ID\\\\Color extends deprecated class Faker\\\\Provider\\\\Color\\.$#"
+			count: 1
+			path: src/Faker/Provider/id_ID/Color.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\id_ID\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/id_ID/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\id_ID\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/id_ID/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\id_ID\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/id_ID/Person.php
 
 		-
 			message: "#^Unsafe access to private property Faker\\\\Provider\\\\id_ID\\\\Person\\:\\:\\$suffix through static\\:\\:\\.$#"
@@ -839,9 +1936,104 @@ parameters:
 			path: src/Faker/Provider/id_ID/Person.php
 
 		-
+			message: "#^Class Faker\\\\Provider\\\\id_ID\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/id_ID/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\is_IS\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/is_IS/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\is_IS\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/is_IS/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\is_IS\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/is_IS/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\is_IS\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/is_IS/Payment.php
+
+		-
 			message: "#^Binary operation \"\\*\" between string and string results in an error\\.$#"
 			count: 1
 			path: src/Faker/Provider/is_IS/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\is_IS\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/is_IS/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\is_IS\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/is_IS/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\it_CH\\\\Address extends deprecated class Faker\\\\Provider\\\\it_IT\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/it_CH/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\it_CH\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/it_CH/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\it_CH\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/it_CH/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\it_CH\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/it_CH/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\it_CH\\\\Person extends deprecated class Faker\\\\Provider\\\\it_IT\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/it_CH/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\it_CH\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/it_CH/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\it_CH\\\\Text extends deprecated class Faker\\\\Provider\\\\it_IT\\\\Text\\.$#"
+			count: 1
+			path: src/Faker/Provider/it_CH/Text.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\it_IT\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/it_IT/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\it_IT\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/it_IT/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\it_IT\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/it_IT/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\it_IT\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/it_IT/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\it_IT\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/it_IT/Person.php
 
 		-
 			message: "#^Unsafe access to private property Faker\\\\Provider\\\\it_IT\\\\Person\\:\\:\\$suffix through static\\:\\:\\.$#"
@@ -849,14 +2041,314 @@ parameters:
 			path: src/Faker/Provider/it_IT/Person.php
 
 		-
+			message: "#^Class Faker\\\\Provider\\\\it_IT\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/it_IT/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ja_JP\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/ja_JP/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ja_JP\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/ja_JP/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ja_JP\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/ja_JP/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ja_JP\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/ja_JP/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ja_JP\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/ja_JP/PhoneNumber.php
+
+		-
 			message: "#^Call to an undefined static method static\\(Faker\\\\Provider\\\\ja_JP\\\\Text\\)\\:\\:split\\(\\)\\.$#"
 			count: 1
 			path: src/Faker/Provider/ja_JP/Text.php
 
 		-
+			message: "#^Class Faker\\\\Provider\\\\ka_GE\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/ka_GE/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ka_GE\\\\Color extends deprecated class Faker\\\\Provider\\\\Color\\.$#"
+			count: 1
+			path: src/Faker/Provider/ka_GE/Color.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ka_GE\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/ka_GE/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ka_GE\\\\DateTime extends deprecated class Faker\\\\Provider\\\\DateTime\\.$#"
+			count: 1
+			path: src/Faker/Provider/ka_GE/DateTime.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ka_GE\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/ka_GE/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ka_GE\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/ka_GE/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ka_GE\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/ka_GE/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ka_GE\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/ka_GE/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\kk_KZ\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/kk_KZ/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\kk_KZ\\\\Color extends deprecated class Faker\\\\Provider\\\\Color\\.$#"
+			count: 1
+			path: src/Faker/Provider/kk_KZ/Color.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\kk_KZ\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/kk_KZ/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\kk_KZ\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/kk_KZ/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\kk_KZ\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/kk_KZ/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\kk_KZ\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/kk_KZ/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\kk_KZ\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/kk_KZ/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ko_KR\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/ko_KR/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ko_KR\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/ko_KR/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ko_KR\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/ko_KR/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ko_KR\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/ko_KR/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ko_KR\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/ko_KR/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\lt_LT\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/lt_LT/Address.php
+
+		-
 			message: "#^Unsafe access to private property Faker\\\\Provider\\\\lt_LT\\\\Address\\:\\:\\$municipality through static\\:\\:\\.$#"
 			count: 1
 			path: src/Faker/Provider/lt_LT/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\lt_LT\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/lt_LT/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\lt_LT\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/lt_LT/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\lt_LT\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/lt_LT/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\lt_LT\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/lt_LT/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\lt_LT\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/lt_LT/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\lv_LV\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/lv_LV/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\lv_LV\\\\Color extends deprecated class Faker\\\\Provider\\\\Color\\.$#"
+			count: 1
+			path: src/Faker/Provider/lv_LV/Color.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\lv_LV\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/lv_LV/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\lv_LV\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/lv_LV/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\lv_LV\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/lv_LV/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\lv_LV\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/lv_LV/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\me_ME\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/me_ME/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\me_ME\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/me_ME/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\me_ME\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/me_ME/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\me_ME\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/me_ME/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\me_ME\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/me_ME/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\mn_MN\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/mn_MN/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\mn_MN\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/mn_MN/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ms_MY\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/ms_MY/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ms_MY\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/ms_MY/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ms_MY\\\\Miscellaneous extends deprecated class Faker\\\\Provider\\\\Miscellaneous\\.$#"
+			count: 1
+			path: src/Faker/Provider/ms_MY/Miscellaneous.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ms_MY\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/ms_MY/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ms_MY\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/ms_MY/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ms_MY\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/ms_MY/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\nb_NO\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/nb_NO/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\nb_NO\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/nb_NO/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\nb_NO\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/nb_NO/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\nb_NO\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/nb_NO/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\nb_NO\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/nb_NO/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ne_NP\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/ne_NP/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ne_NP\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/ne_NP/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ne_NP\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/ne_NP/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ne_NP\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/ne_NP/Person.php
 
 		-
 			message: "#^Unsafe access to private property Faker\\\\Provider\\\\ne_NP\\\\Person\\:\\:\\$middleNameFemale through static\\:\\:\\.$#"
@@ -869,13 +2361,118 @@ parameters:
 			path: src/Faker/Provider/ne_NP/Person.php
 
 		-
+			message: "#^Class Faker\\\\Provider\\\\ne_NP\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/ne_NP/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\nl_BE\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/nl_BE/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\nl_BE\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/nl_BE/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\nl_BE\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/nl_BE/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\nl_BE\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/nl_BE/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\nl_BE\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/nl_BE/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\nl_BE\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/nl_BE/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\nl_NL\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/nl_NL/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\nl_NL\\\\Color extends deprecated class Faker\\\\Provider\\\\Color\\.$#"
+			count: 1
+			path: src/Faker/Provider/nl_NL/Color.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\nl_NL\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/nl_NL/Company.php
+
+		-
 			message: "#^Variable \\$companyName might not be defined\\.$#"
 			count: 2
 			path: src/Faker/Provider/nl_NL/Company.php
 
 		-
+			message: "#^Class Faker\\\\Provider\\\\nl_NL\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/nl_NL/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\nl_NL\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/nl_NL/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\nl_NL\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/nl_NL/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\nl_NL\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/nl_NL/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\pl_PL\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/pl_PL/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\pl_PL\\\\Color extends deprecated class Faker\\\\Provider\\\\Color\\.$#"
+			count: 1
+			path: src/Faker/Provider/pl_PL/Color.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\pl_PL\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/pl_PL/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\pl_PL\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/pl_PL/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\pl_PL\\\\LicensePlate extends deprecated class Faker\\\\Provider\\\\Base\\.$#"
+			count: 1
+			path: src/Faker/Provider/pl_PL/LicensePlate.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\pl_PL\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/pl_PL/Payment.php
+
+		-
 			message: "#^Call to method format\\(\\) on an unknown class Faker\\\\Provider\\\\pl_PL\\\\DateTime\\.$#"
 			count: 4
+			path: src/Faker/Provider/pl_PL/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\pl_PL\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
 			path: src/Faker/Provider/pl_PL/Person.php
 
 		-
@@ -884,14 +2481,74 @@ parameters:
 			path: src/Faker/Provider/pl_PL/Person.php
 
 		-
+			message: "#^Class Faker\\\\Provider\\\\pl_PL\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/pl_PL/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\pt_BR\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/pt_BR/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\pt_BR\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/pt_BR/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\pt_BR\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/pt_BR/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\pt_BR\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/pt_BR/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\pt_BR\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/pt_BR/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\pt_BR\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/pt_BR/PhoneNumber.php
+
+		-
 			message: "#^Binary operation \"\\*\" between string and int\\<2, max\\> results in an error\\.$#"
 			count: 1
 			path: src/Faker/Provider/pt_BR/check_digit.php
 
 		-
+			message: "#^Class Faker\\\\Provider\\\\pt_PT\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/pt_PT/Address.php
+
+		-
 			message: "#^Unsafe access to private property Faker\\\\Provider\\\\pt_PT\\\\Address\\:\\:\\$cities through static\\:\\:\\.$#"
 			count: 1
 			path: src/Faker/Provider/pt_PT/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\pt_PT\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/pt_PT/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\pt_PT\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/pt_PT/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\pt_PT\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/pt_PT/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\pt_PT\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/pt_PT/Person.php
 
 		-
 			message: "#^Left side of \\|\\| is always true\\.$#"
@@ -904,9 +2561,69 @@ parameters:
 			path: src/Faker/Provider/pt_PT/Person.php
 
 		-
+			message: "#^Class Faker\\\\Provider\\\\pt_PT\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/pt_PT/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ro_MD\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/ro_MD/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ro_MD\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/ro_MD/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ro_MD\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/ro_MD/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ro_MD\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/ro_MD/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ro_RO\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/ro_RO/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ro_RO\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/ro_RO/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ro_RO\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/ro_RO/Person.php
+
+		-
 			message: "#^Parameter \\#1 \\$string of function substr expects string, int given\\.$#"
 			count: 1
 			path: src/Faker/Provider/ro_RO/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ro_RO\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/ro_RO/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ru_RU\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/ru_RU/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ru_RU\\\\Color extends deprecated class Faker\\\\Provider\\\\Color\\.$#"
+			count: 1
+			path: src/Faker/Provider/ru_RU/Color.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ru_RU\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/ru_RU/Company.php
 
 		-
 			message: "#^Parameter \\#1 \\$input of function str_pad expects string, int given\\.$#"
@@ -914,9 +2631,84 @@ parameters:
 			path: src/Faker/Provider/ru_RU/Company.php
 
 		-
+			message: "#^Class Faker\\\\Provider\\\\ru_RU\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/ru_RU/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ru_RU\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/ru_RU/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ru_RU\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/ru_RU/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\ru_RU\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/ru_RU/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\sk_SK\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/sk_SK/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\sk_SK\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/sk_SK/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\sk_SK\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/sk_SK/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\sk_SK\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/sk_SK/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\sk_SK\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/sk_SK/Person.php
+
+		-
 			message: "#^Unsafe access to private property Faker\\\\Provider\\\\sk_SK\\\\Person\\:\\:\\$suffix through static\\:\\:\\.$#"
 			count: 1
 			path: src/Faker/Provider/sk_SK/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\sk_SK\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/sk_SK/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\sl_SI\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/sl_SI/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\sl_SI\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/sl_SI/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\sl_SI\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/sl_SI/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\sl_SI\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/sl_SI/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\sl_SI\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/sl_SI/Person.php
 
 		-
 			message: "#^Static call to instance method Faker\\\\Provider\\\\sl_SI\\\\Person\\:\\:lastName\\(\\)\\.$#"
@@ -924,9 +2716,229 @@ parameters:
 			path: src/Faker/Provider/sl_SI/Person.php
 
 		-
+			message: "#^Class Faker\\\\Provider\\\\sl_SI\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/sl_SI/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\sr_Cyrl_RS\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/sr_Cyrl_RS/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\sr_Cyrl_RS\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/sr_Cyrl_RS/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\sr_Cyrl_RS\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/sr_Cyrl_RS/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\sr_Latn_RS\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/sr_Latn_RS/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\sr_Latn_RS\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/sr_Latn_RS/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\sr_Latn_RS\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/sr_Latn_RS/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\sr_RS\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/sr_RS/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\sr_RS\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/sr_RS/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\sr_RS\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/sr_RS/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\sv_SE\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/sv_SE/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\sv_SE\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/sv_SE/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\sv_SE\\\\Municipality extends deprecated class Faker\\\\Provider\\\\Base\\.$#"
+			count: 1
+			path: src/Faker/Provider/sv_SE/Municipality.php
+
+		-
 			message: "#^Unsafe access to private property Faker\\\\Provider\\\\sv_SE\\\\Municipality\\:\\:\\$municipalities through static\\:\\:\\.$#"
 			count: 1
 			path: src/Faker/Provider/sv_SE/Municipality.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\sv_SE\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/sv_SE/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\sv_SE\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/sv_SE/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\sv_SE\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/sv_SE/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\th_TH\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/th_TH/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\th_TH\\\\Color extends deprecated class Faker\\\\Provider\\\\Color\\.$#"
+			count: 1
+			path: src/Faker/Provider/th_TH/Color.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\th_TH\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/th_TH/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\th_TH\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/th_TH/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\th_TH\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/th_TH/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\th_TH\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/th_TH/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\th_TH\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/th_TH/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\tr_TR\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/tr_TR/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\tr_TR\\\\Color extends deprecated class Faker\\\\Provider\\\\Color\\.$#"
+			count: 1
+			path: src/Faker/Provider/tr_TR/Color.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\tr_TR\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/tr_TR/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\tr_TR\\\\DateTime extends deprecated class Faker\\\\Provider\\\\DateTime\\.$#"
+			count: 1
+			path: src/Faker/Provider/tr_TR/DateTime.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\tr_TR\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/tr_TR/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\tr_TR\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/tr_TR/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\tr_TR\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/tr_TR/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\tr_TR\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/tr_TR/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\uk_UA\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/uk_UA/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\uk_UA\\\\Color extends deprecated class Faker\\\\Provider\\\\Color\\.$#"
+			count: 1
+			path: src/Faker/Provider/uk_UA/Color.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\uk_UA\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/uk_UA/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\uk_UA\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/uk_UA/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\uk_UA\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/uk_UA/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\uk_UA\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/uk_UA/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\uk_UA\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/uk_UA/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\vi_VN\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/vi_VN/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\vi_VN\\\\Color extends deprecated class Faker\\\\Provider\\\\Color\\.$#"
+			count: 1
+			path: src/Faker/Provider/vi_VN/Color.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\vi_VN\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/vi_VN/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\vi_VN\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/vi_VN/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\vi_VN\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/vi_VN/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\zh_CN\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/zh_CN/Address.php
 
 		-
 			message: "#^Parameter \\#1 \\$input of function str_pad expects string, int given\\.$#"
@@ -937,6 +2949,81 @@ parameters:
 			message: "#^Parameter \\#3 \\$pad_string of function str_pad expects string, int given\\.$#"
 			count: 1
 			path: src/Faker/Provider/zh_CN/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\zh_CN\\\\Color extends deprecated class Faker\\\\Provider\\\\Color\\.$#"
+			count: 1
+			path: src/Faker/Provider/zh_CN/Color.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\zh_CN\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/zh_CN/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\zh_CN\\\\DateTime extends deprecated class Faker\\\\Provider\\\\DateTime\\.$#"
+			count: 1
+			path: src/Faker/Provider/zh_CN/DateTime.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\zh_CN\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/zh_CN/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\zh_CN\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/zh_CN/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\zh_CN\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/zh_CN/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\zh_CN\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/zh_CN/PhoneNumber.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\zh_TW\\\\Address extends deprecated class Faker\\\\Provider\\\\Address\\.$#"
+			count: 1
+			path: src/Faker/Provider/zh_TW/Address.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\zh_TW\\\\Color extends deprecated class Faker\\\\Provider\\\\Color\\.$#"
+			count: 1
+			path: src/Faker/Provider/zh_TW/Color.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\zh_TW\\\\Company extends deprecated class Faker\\\\Provider\\\\Company\\.$#"
+			count: 1
+			path: src/Faker/Provider/zh_TW/Company.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\zh_TW\\\\DateTime extends deprecated class Faker\\\\Provider\\\\DateTime\\.$#"
+			count: 1
+			path: src/Faker/Provider/zh_TW/DateTime.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\zh_TW\\\\Internet extends deprecated class Faker\\\\Provider\\\\Internet\\.$#"
+			count: 1
+			path: src/Faker/Provider/zh_TW/Internet.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\zh_TW\\\\Payment extends deprecated class Faker\\\\Provider\\\\Payment\\.$#"
+			count: 1
+			path: src/Faker/Provider/zh_TW/Payment.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\zh_TW\\\\Person extends deprecated class Faker\\\\Provider\\\\Person\\.$#"
+			count: 1
+			path: src/Faker/Provider/zh_TW/Person.php
+
+		-
+			message: "#^Class Faker\\\\Provider\\\\zh_TW\\\\PhoneNumber extends deprecated class Faker\\\\Provider\\\\PhoneNumber\\.$#"
+			count: 1
+			path: src/Faker/Provider/zh_TW/PhoneNumber.php
 
 		-
 			message: "#^Parameter \\#1 \\$autoload_function of function spl_autoload_register expects callable\\(string\\)\\: void, Closure\\(mixed\\)\\: bool given\\.$#"

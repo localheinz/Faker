@@ -2,6 +2,9 @@
 
 namespace Faker\Provider;
 
+/**
+ * @deprecated
+ */
 class Internet extends Base
 {
     protected static $freeEmailDomain = ['gmail.com', 'yahoo.com', 'hotmail.com'];

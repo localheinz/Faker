@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\ka_GE;
 
+/**
+ * @deprecated
+ */
 class Payment extends \Faker\Provider\Payment
 {
     /**

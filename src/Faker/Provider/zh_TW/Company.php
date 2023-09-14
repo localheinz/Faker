@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\zh_TW;
 
+/**
+ * @deprecated
+ */
 class Company extends \Faker\Provider\Company
 {
     protected static $companyEnSuffix = [

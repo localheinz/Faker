@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\ja_JP;
 
+/**
+ * @deprecated
+ */
 class Address extends \Faker\Provider\Address
 {
     protected static $country = [

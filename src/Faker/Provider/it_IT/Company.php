@@ -4,6 +4,9 @@ namespace Faker\Provider\it_IT;
 
 use Faker\Calculator\Luhn;
 
+/**
+ * @deprecated
+ */
 class Company extends \Faker\Provider\Company
 {
     protected static $formats = [

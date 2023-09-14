@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\sk_SK;
 
+/**
+ * @deprecated
+ */
 class Internet extends \Faker\Provider\Internet
 {
     protected static $freeEmailDomain = ['gmail.com', 'yahoo.com', 'zoznam.sk', 'atlas.sk', 'centrum.sk', 'azet.sk', 'post.sk'];

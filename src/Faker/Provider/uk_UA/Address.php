@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\uk_UA;
 
+/**
+ * @deprecated
+ */
 class Address extends \Faker\Provider\Address
 {
     protected static $cityPrefix = ['місто'];

@@ -6,6 +6,9 @@ namespace Faker\Provider\zh_TW;
  * @deprecated Use {@link \Faker\Provider\Payment} instead
  * @see \Faker\Provider\Payment
  */
+/**
+ * @deprecated
+ */
 class Payment extends \Faker\Provider\Payment
 {
     /**

@@ -7,6 +7,9 @@ namespace Faker\Provider\pl_PL;
  *
  * @see https://msw.gov.pl/pl/sprawy-obywatelskie/ewidencja-ludnosci-dowo/statystyki-imion-i-nazw
  */
+/**
+ * @deprecated
+ */
 class Person extends \Faker\Provider\Person
 {
     protected static $lastNameFormat = [

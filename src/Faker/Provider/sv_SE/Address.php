@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\sv_SE;
 
+/**
+ * @deprecated
+ */
 class Address extends \Faker\Provider\Address
 {
     protected static $buildingNumber = ['%###', '%##', '%#', '%#?', '%', '%?'];

@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\pt_BR;
 
+/**
+ * @deprecated
+ */
 class Text extends \Faker\Provider\Text
 {
     /**
@@ -120,6 +123,9 @@ das paredes os medalhões de Cesar, Augusto, Nero e Massinissa, com os
 nomes por baixo... Não alcanço a razão de taes personagens. Quando
 fomos para a casa de Matacavallos, já ella estava assim decorada; vinha
 do decennio anterior. Naturalmente era gosto do tempo metter sabor
+/**
+ * @deprecated
+ */
 classico e figuras antigas em pinturas americanas. O mais é tambem
 analogo e parecido. Tenho chacarinha, flôres, legume, uma casuarina, um
 poço e lavadouro. Uso louça velha e mobilia velha. Emfim, agora, como

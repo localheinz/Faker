@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\tr_TR;
 
+/**
+ * @deprecated
+ */
 class Internet extends \Faker\Provider\Internet
 {
     protected static $freeEmailDomain = ['gmail.com', 'hotmail.com', 'yahoo.com', 'yandex.com.tr', 'mynet.com', 'turk.net', 'superposta.com'];

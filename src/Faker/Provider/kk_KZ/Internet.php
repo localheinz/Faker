@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\kk_KZ;
 
+/**
+ * @deprecated
+ */
 class Internet extends \Faker\Provider\Internet
 {
     protected static $freeEmailDomain = ['mail.kz', 'yandex.kz', 'host.kz'];

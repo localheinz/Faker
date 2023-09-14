@@ -2,6 +2,9 @@
 
 namespace Faker\Provider;
 
+/**
+ * @deprecated
+ */
 class File extends Base
 {
     /**

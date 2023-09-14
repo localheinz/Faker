@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\en_US;
 
+/**
+ * @deprecated
+ */
 class Payment extends \Faker\Provider\Payment
 {
     public function bankAccountNumber()

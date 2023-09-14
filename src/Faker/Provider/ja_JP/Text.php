@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\ja_JP;
 
+/**
+ * @deprecated
+ */
 class Text extends \Faker\Provider\Text
 {
     protected static $separator = '';

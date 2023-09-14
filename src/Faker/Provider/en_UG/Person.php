@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\en_UG;
 
+/**
+ * @deprecated
+ */
 class Person extends \Faker\Provider\Person
 {
     /**

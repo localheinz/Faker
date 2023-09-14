@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\zh_CN;
 
+/**
+ * @deprecated
+ */
 class DateTime extends \Faker\Provider\DateTime
 {
     public static function amPm($max = 'now')

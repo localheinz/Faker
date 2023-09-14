@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\da_DK;
 
+/**
+ * @deprecated
+ */
 class Internet extends \Faker\Provider\Internet
 {
     /**

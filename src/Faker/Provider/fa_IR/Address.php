@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\fa_IR;
 
+/**
+ * @deprecated
+ */
 class Address extends \Faker\Provider\Address
 {
     protected static $cityPrefix = ['استان'];

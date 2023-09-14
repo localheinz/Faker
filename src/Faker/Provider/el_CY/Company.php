@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\el_CY;
 
+/**
+ * @deprecated
+ */
 class Company extends \Faker\Provider\Company
 {
     protected static $companySuffix = [

@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\uk_UA;
 
+/**
+ * @deprecated
+ */
 class PhoneNumber extends \Faker\Provider\PhoneNumber
 {
     /**

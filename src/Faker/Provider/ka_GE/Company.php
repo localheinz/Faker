@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\ka_GE;
 
+/**
+ * @deprecated
+ */
 class Company extends \Faker\Provider\Company
 {
     protected static $companyPrefixes = [

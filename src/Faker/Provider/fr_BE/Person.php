@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\fr_BE;
 
+/**
+ * @deprecated
+ */
 class Person extends \Faker\Provider\Person
 {
     protected static $firstNameMale = [

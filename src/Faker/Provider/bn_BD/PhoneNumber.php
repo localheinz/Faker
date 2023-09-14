@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\bn_BD;
 
+/**
+ * @deprecated
+ */
 class PhoneNumber extends \Faker\Provider\PhoneNumber
 {
     public function phoneNumber()

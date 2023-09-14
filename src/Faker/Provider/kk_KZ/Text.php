@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\kk_KZ;
 
+/**
+ * @deprecated
+ */
 class Text extends \Faker\Provider\Text
 {
     /**

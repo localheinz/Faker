@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\fi_FI;
 
+/**
+ * @deprecated
+ */
 class Internet extends \Faker\Provider\Internet
 {
     protected static $freeEmailDomain = ['gmail.com', 'yahoo.com', 'hotmail.com', 'jippii.fi', 'luukku.com'];

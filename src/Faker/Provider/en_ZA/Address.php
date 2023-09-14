@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\en_ZA;
 
+/**
+ * @deprecated
+ */
 class Address extends \Faker\Provider\en_US\Address
 {
     protected static $cityPrefix = ['North', 'East', 'West', 'South', 'New', 'Lake', 'Port'];

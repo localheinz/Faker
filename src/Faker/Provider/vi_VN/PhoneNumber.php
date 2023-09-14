@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\vi_VN;
 
+/**
+ * @deprecated
+ */
 class PhoneNumber extends \Faker\Provider\PhoneNumber
 {
     protected static $areaCodes = [

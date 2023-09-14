@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\sl_SI;
 
+/**
+ * @deprecated
+ */
 class Address extends \Faker\Provider\Address
 {
     /**

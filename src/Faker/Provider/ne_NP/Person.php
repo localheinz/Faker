@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\ne_NP;
 
+/**
+ * @deprecated
+ */
 class Person extends \Faker\Provider\Person
 {
     protected static $maleNameFormats = [

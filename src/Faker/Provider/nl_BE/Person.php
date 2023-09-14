@@ -4,6 +4,9 @@ namespace Faker\Provider\nl_BE;
 
 use Faker\Provider\DateTime;
 
+/**
+ * @deprecated
+ */
 class Person extends \Faker\Provider\Person
 {
     protected static $firstNameMale = [

@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\ka_GE;
 
+/**
+ * @deprecated
+ */
 class Address extends \Faker\Provider\Address
 {
     protected static $cityPrefix = ['ქალაქი', 'ქ.'];

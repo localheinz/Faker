@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\th_TH;
 
+/**
+ * @deprecated
+ */
 class Payment extends \Faker\Provider\Payment
 {
     /**

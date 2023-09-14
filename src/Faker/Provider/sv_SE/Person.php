@@ -4,6 +4,9 @@ namespace Faker\Provider\sv_SE;
 
 use Faker\Calculator\Luhn;
 
+/**
+ * @deprecated
+ */
 class Person extends \Faker\Provider\Person
 {
     protected static $formats = [

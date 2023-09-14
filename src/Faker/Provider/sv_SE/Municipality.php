@@ -4,6 +4,9 @@ namespace Faker\Provider\sv_SE;
 
 use Faker\Provider\Base;
 
+/**
+ * @deprecated
+ */
 class Municipality extends Base
 {
     /**

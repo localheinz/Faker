@@ -5,6 +5,9 @@ namespace Faker\Provider\cs_CZ;
 /**
  * Czech months and days without setting locale
  */
+/**
+ * @deprecated
+ */
 class DateTime extends \Faker\Provider\DateTime
 {
     protected static $days = [

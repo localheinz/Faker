@@ -2,6 +2,9 @@
 
 namespace Faker\Provider;
 
+/**
+ * @deprecated
+ */
 class Address extends Base
 {
     protected static $citySuffix = ['Ville'];

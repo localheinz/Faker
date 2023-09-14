@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\bn_BD;
 
+/**
+ * @deprecated
+ */
 class Utils
 {
     public static function getBanglaNumber($number)

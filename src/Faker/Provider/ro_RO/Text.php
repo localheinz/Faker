@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\ro_RO;
 
+/**
+ * @deprecated
+ */
 class Text extends \Faker\Provider\Text
 {
     /**

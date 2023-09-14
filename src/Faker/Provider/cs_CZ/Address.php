@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\cs_CZ;
 
+/**
+ * @deprecated
+ */
 class Address extends \Faker\Provider\Address
 {
     protected static $streetAddressFormats = [

@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\sk_SK;
 
+/**
+ * @deprecated
+ */
 class Address extends \Faker\Provider\Address
 {
     protected static $cityName = [

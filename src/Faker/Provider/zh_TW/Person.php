@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\zh_TW;
 
+/**
+ * @deprecated
+ */
 class Person extends \Faker\Provider\Person
 {
     /**

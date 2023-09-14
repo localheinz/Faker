@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\en_HK;
 
+/**
+ * @deprecated
+ */
 class Internet extends \Faker\Provider\Internet
 {
     protected static $freeEmailDomain = [

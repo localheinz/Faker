@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\id_ID;
 
+/**
+ * @deprecated
+ */
 class Address extends \Faker\Provider\Address
 {
     /**

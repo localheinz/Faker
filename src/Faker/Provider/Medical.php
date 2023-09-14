@@ -2,6 +2,9 @@
 
 namespace Faker\Provider;
 
+/**
+ * @deprecated
+ */
 class Medical extends Base
 {
     protected static $bloodTypes = ['A', 'AB', 'B', 'O'];

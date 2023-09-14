@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\ar_JO;
 
+/**
+ * @deprecated
+ */
 class Address extends \Faker\Provider\Address
 {
     protected static $streetPrefix = ['شارع'];

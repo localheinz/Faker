@@ -7,6 +7,9 @@ namespace Faker\Provider\hu_HU;
  *
  * @see https://en.wikipedia.org/wiki/Hungarian_names and https://en.wiktionary.org/wiki/Category:Hungarian_abbreviations
  */
+/**
+ * @deprecated
+ */
 class Person extends \Faker\Provider\Person
 {
     protected static $maleNameFormats = [

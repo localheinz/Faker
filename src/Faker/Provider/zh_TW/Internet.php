@@ -6,6 +6,9 @@ namespace Faker\Provider\zh_TW;
  * @deprecated Use {@link \Faker\Provider\Internet} instead
  * @see \Faker\Provider\Internet
  */
+/**
+ * @deprecated
+ */
 class Internet extends \Faker\Provider\Internet
 {
     /**

@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\en_GB;
 
+/**
+ * @deprecated
+ */
 class Company extends \Faker\Provider\Company
 {
     public const VAT_PREFIX = 'GB';

@@ -4,6 +4,9 @@ namespace Faker\Provider\pt_BR;
 
 require_once 'check_digit.php';
 
+/**
+ * @deprecated
+ */
 class Company extends \Faker\Provider\Company
 {
     protected static $formats = [

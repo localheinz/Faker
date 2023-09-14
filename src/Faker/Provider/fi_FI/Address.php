@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\fi_FI;
 
+/**
+ * @deprecated
+ */
 class Address extends \Faker\Provider\Address
 {
     protected static $cityPrefix = ['Pohjois', 'Etelä', 'Itä', 'Länsi', 'Uusi', 'Uus'];

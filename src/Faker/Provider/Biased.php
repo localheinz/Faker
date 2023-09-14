@@ -4,6 +4,9 @@ namespace Faker\Provider;
 
 use Faker\Extension;
 
+/**
+ * @deprecated
+ */
 class Biased extends Base
 {
     /**

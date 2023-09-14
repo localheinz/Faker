@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\ar_EG;
 
+/**
+ * @deprecated
+ */
 class Internet extends \Faker\Provider\Internet
 {
     protected static $userNameFormats = [

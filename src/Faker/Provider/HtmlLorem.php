@@ -5,6 +5,9 @@ namespace Faker\Provider;
 use Faker\Generator;
 use Faker\UniqueGenerator;
 
+/**
+ * @deprecated
+ */
 class HtmlLorem extends Base
 {
     public const HTML_TAG = 'html';

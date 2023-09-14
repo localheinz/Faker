@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\en_SG;
 
+/**
+ * @deprecated
+ */
 class PhoneNumber extends \Faker\Provider\PhoneNumber
 {
     protected static $internationalCodePrefix = [

@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\ne_NP;
 
+/**
+ * @deprecated
+ */
 class Address extends \Faker\Provider\Address
 {
     protected static $wardNumber = ['##', '#'];

@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\sk_SK;
 
+/**
+ * @deprecated
+ */
 class Person extends \Faker\Provider\Person
 {
     protected static $lastNameFormat = [

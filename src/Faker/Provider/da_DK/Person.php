@@ -7,6 +7,9 @@ use Faker\Provider\DateTime;
 /**
  * @see http://www.danskernesnavne.navneforskning.ku.dk/Personnavne.asp
  */
+/**
+ * @deprecated
+ */
 class Person extends \Faker\Provider\Person
 {
     /**

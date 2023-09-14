@@ -9,6 +9,9 @@ use Faker\Calculator\Isbn;
  * @see http://en.wikipedia.org/wiki/EAN-13
  * @see http://en.wikipedia.org/wiki/ISBN
  */
+/**
+ * @deprecated
+ */
 class Barcode extends Base
 {
     private function ean($length = 13)

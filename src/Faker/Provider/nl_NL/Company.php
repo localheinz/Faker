@@ -4,6 +4,9 @@ namespace Faker\Provider\nl_NL;
 
 use Faker\Provider\Miscellaneous;
 
+/**
+ * @deprecated
+ */
 class Company extends \Faker\Provider\Company
 {
     /**

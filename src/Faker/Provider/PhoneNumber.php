@@ -4,6 +4,9 @@ namespace Faker\Provider;
 
 use Faker\Calculator\Luhn;
 
+/**
+ * @deprecated
+ */
 class PhoneNumber extends Base
 {
     protected static $formats = ['###-###-###'];

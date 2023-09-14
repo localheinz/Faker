@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\hy_AM;
 
+/**
+ * @deprecated
+ */
 class Address extends \Faker\Provider\Address
 {
     protected static $cityPrefix = ['քաղաք', 'գյուղ'];

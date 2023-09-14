@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\el_CY;
 
+/**
+ * @deprecated
+ */
 class Payment extends \Faker\Provider\Payment
 {
     /**

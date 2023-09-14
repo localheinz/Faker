@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\tr_TR;
 
+/**
+ * @deprecated
+ */
 class Company extends \Faker\Provider\Company
 {
     protected static $formats = [

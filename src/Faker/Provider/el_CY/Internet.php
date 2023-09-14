@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\el_CY;
 
+/**
+ * @deprecated
+ */
 class Internet extends \Faker\Provider\Internet
 {
     protected static $freeEmailDomain = ['gmail.com', 'yahoo.com', 'hotmail.com', 'cablenet.com.cy', 'cytanet.com.cy', 'primehome.com'];

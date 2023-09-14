@@ -5,6 +5,9 @@ namespace Faker\Provider;
 use Faker\Calculator\Iban;
 use Faker\Calculator\Luhn;
 
+/**
+ * @deprecated
+ */
 class Payment extends Base
 {
     public static $expirationDateFormat = 'm/y';

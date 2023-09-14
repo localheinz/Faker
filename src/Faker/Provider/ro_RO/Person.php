@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\ro_RO;
 
+/**
+ * @deprecated
+ */
 class Person extends \Faker\Provider\Person
 {
     // http://en.wikipedia.org/wiki/Romanian_name, prefixes are for more formal purposes

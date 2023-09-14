@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\pt_BR;
 
+/**
+ * @deprecated
+ */
 class Address extends \Faker\Provider\Address
 {
     protected static $cityPrefix = ['São', 'Porto', 'Vila', 'Santa'];

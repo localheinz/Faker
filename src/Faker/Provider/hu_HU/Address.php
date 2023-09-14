@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\hu_HU;
 
+/**
+ * @deprecated
+ */
 class Address extends \Faker\Provider\Address
 {
     protected static $cityFormats = [

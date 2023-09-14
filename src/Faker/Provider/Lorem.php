@@ -2,6 +2,9 @@
 
 namespace Faker\Provider;
 
+/**
+ * @deprecated
+ */
 class Lorem extends Base
 {
     protected static $wordList = [

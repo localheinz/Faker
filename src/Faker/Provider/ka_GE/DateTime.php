@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\ka_GE;
 
+/**
+ * @deprecated
+ */
 class DateTime extends \Faker\Provider\DateTime
 {
     public static function dayOfWeek($max = 'now')

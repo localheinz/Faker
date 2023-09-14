@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\nb_NO;
 
+/**
+ * @deprecated
+ */
 class Person extends \Faker\Provider\Person
 {
     protected static $formats = [

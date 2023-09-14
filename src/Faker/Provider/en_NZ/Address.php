@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\en_NZ;
 
+/**
+ * @deprecated
+ */
 class Address extends \Faker\Provider\en_US\Address
 {
     /**

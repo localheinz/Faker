@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\pt_PT;
 
+/**
+ * @deprecated
+ */
 class PhoneNumber extends \Faker\Provider\PhoneNumber
 {
     /**

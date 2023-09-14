@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\is_IS;
 
+/**
+ * @deprecated
+ */
 class Company extends \Faker\Provider\Company
 {
     /**

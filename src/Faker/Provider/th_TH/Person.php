@@ -4,6 +4,9 @@ namespace Faker\Provider\th_TH;
 
 use Faker\Provider\Miscellaneous;
 
+/**
+ * @deprecated
+ */
 class Person extends \Faker\Provider\Person
 {
     protected static $maleNameFormats = [

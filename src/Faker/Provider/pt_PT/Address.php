@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\pt_PT;
 
+/**
+ * @deprecated
+ */
 class Address extends \Faker\Provider\Address
 {
     protected static $streetPrefix = ['Av.', 'Avenida', 'R.', 'Rua', 'Tv.', 'Travessa', 'Lg.', 'Largo'];

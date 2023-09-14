@@ -6,6 +6,9 @@ namespace Faker\Provider\el_GR;
  * @see https://en.wikipedia.org/wiki/Telephone_numbers_in_Greece
  * @see https://github.com/giggsey/libphonenumber-for-php/blob/master/src/data/PhoneNumberMetadata_GR.php
  */
+/**
+ * @deprecated
+ */
 class PhoneNumber extends \Faker\Provider\PhoneNumber
 {
     protected static $internationalCallPrefixes = ['', '+30'];

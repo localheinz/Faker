@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\en_HK;
 
+/**
+ * @deprecated
+ */
 class PhoneNumber extends \Faker\Provider\PhoneNumber
 {
     protected static $formats = ['2#######', '3#######', '5#######', '6#######', '9#######'];

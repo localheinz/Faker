@@ -4,6 +4,9 @@ namespace Faker\Provider\pt_BR;
 
 require_once 'check_digit.php';
 
+/**
+ * @deprecated
+ */
 class Person extends \Faker\Provider\Person
 {
     protected static $maleNameFormats = [

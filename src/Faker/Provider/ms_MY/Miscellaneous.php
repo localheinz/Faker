@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\ms_MY;
 
+/**
+ * @deprecated
+ */
 class Miscellaneous extends \Faker\Provider\Miscellaneous
 {
     /**

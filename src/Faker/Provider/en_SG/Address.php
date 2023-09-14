@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\en_SG;
 
+/**
+ * @deprecated
+ */
 class Address extends \Faker\Provider\Address
 {
     // http://en.wikipedia.org/wiki/Singapore_Post#Address_format

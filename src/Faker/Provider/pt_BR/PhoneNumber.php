@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\pt_BR;
 
+/**
+ * @deprecated
+ */
 class PhoneNumber extends \Faker\Provider\PhoneNumber
 {
     protected static $landlineFormats = ['2###-####', '3###-####', '4###-####'];

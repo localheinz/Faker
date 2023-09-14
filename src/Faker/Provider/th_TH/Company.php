@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\th_TH;
 
+/**
+ * @deprecated
+ */
 class Company extends \Faker\Provider\Company
 {
     protected static $slogans = [

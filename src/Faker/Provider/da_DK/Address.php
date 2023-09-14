@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\da_DK;
 
+/**
+ * @deprecated
+ */
 class Address extends \Faker\Provider\Address
 {
     /**

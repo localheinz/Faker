@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\fr_FR;
 
+/**
+ * @deprecated
+ */
 class PhoneNumber extends \Faker\Provider\PhoneNumber
 {
     // Phone numbers can't start by 00 in France

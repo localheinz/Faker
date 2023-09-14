@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\es_ES;
 
+/**
+ * @deprecated
+ */
 class Person extends \Faker\Provider\Person
 {
     private static $crcMap = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];

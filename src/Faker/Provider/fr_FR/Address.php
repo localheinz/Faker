@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\fr_FR;
 
+/**
+ * @deprecated
+ */
 class Address extends \Faker\Provider\Address
 {
     protected static $citySuffix = ['Ville', 'Bourg', '-les-Bains', '-sur-Mer', '-la-Forêt', 'boeuf', 'nec', 'dan'];

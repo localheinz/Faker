@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\ms_MY;
 
+/**
+ * @deprecated
+ */
 class Payment extends \Faker\Provider\Payment
 {
     protected static $bankFormats = [

@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\el_CY;
 
+/**
+ * @deprecated
+ */
 class Address extends \Faker\Provider\Address
 {
     protected static $citySuffix = ['Λευκωσία', 'Λεμεσός', 'Λάρνακα', 'Πάφος'];

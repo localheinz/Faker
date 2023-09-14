@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\en_HK;
 
+/**
+ * @deprecated
+ */
 class Address extends \Faker\Provider\Address
 {
     protected static $country = ['Hong Kong'];

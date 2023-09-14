@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\pt_BR;
 
+/**
+ * @deprecated
+ */
 class Payment extends \Faker\Provider\Payment
 {
     protected static $cardVendors = [

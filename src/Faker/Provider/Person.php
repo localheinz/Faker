@@ -2,6 +2,9 @@
 
 namespace Faker\Provider;
 
+/**
+ * @deprecated
+ */
 class Person extends Base
 {
     public const GENDER_MALE = 'male';

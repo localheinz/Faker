@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\cs_CZ;
 
+/**
+ * @deprecated
+ */
 class Text extends \Faker\Provider\Text
 {
     public function realText($maxNbChars = 200, $indexSize = 2)

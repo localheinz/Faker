@@ -4,6 +4,9 @@ namespace Faker\Provider\fr_FR;
 
 use Faker\Calculator\Luhn;
 
+/**
+ * @deprecated
+ */
 class Company extends \Faker\Provider\Company
 {
     /**

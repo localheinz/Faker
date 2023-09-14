@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\id_ID;
 
+/**
+ * @deprecated
+ */
 class Internet extends \Faker\Provider\Internet
 {
     /**

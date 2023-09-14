@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\ar_SA;
 
+/**
+ * @deprecated
+ */
 class Color extends \Faker\Provider\Color
 {
     protected static $safeColorNames = [

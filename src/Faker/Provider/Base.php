@@ -8,6 +8,9 @@ use Faker\Generator;
 use Faker\UniqueGenerator;
 use Faker\ValidGenerator;
 
+/**
+ * @deprecated
+ */
 class Base
 {
     /**

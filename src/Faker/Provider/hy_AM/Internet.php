@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\hy_AM;
 
+/**
+ * @deprecated
+ */
 class Internet extends \Faker\Provider\Internet
 {
     protected static $freeEmailDomain = ['gmail.com', 'yahoo.com', 'hotmail.com', 'yandex.ru', 'mail.ru', 'mail.am'];

@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\en_PH;
 
+/**
+ * @deprecated
+ */
 class PhoneNumber extends \Faker\Provider\PhoneNumber
 {
     // http://en.wikipedia.org/wiki/Telephone_numbers_in_the_Philippines

@@ -2,6 +2,9 @@
 
 namespace Faker\Provider\ms_MY;
 
+/**
+ * @deprecated
+ */
 class Address extends \Faker\Provider\Address
 {
     /**

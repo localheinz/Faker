@@ -5,6 +5,9 @@ namespace Faker\Provider;
 /**
  * Depends on image generation from http://lorempixel.com/
  */
+/**
+ * @deprecated
+ */
 class Image extends Base
 {
     /**
