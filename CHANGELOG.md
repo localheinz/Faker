@@ -1,6 +1,8 @@
 # CHANGELOG
 
-## [Unreleased](https://github.com/FakerPHP/Faker/compare/v1.23.0...main)
+## [Unreleased](https://github.com/FakerPHP/Faker/compare/v1.23.1...1.23)
+
+## [2023-09-29, v1.23.1](https://github.com/FakerPHP/Faker/compare/v1.23.0..v1.23.1)
 
 - Fixed double `а` female lastName in `ru_RU/Person::name()` (#832)
 - Fixed polish license plates (#685)
