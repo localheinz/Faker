@@ -14,7 +14,8 @@ jobs:
 
     strategy:
       matrix:
-        php-version: ["7.4"]
+        php-version:
+          - "7.4"
 
     steps:
       - name: "Checkout code"
@@ -55,7 +56,8 @@ jobs:
 
     strategy:
       matrix:
-        php-version: ["7.4"]
+        php-version:
+          - "7.4"
 
     steps:
       - name: "Checkout"
