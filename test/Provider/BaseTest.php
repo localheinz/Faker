@@ -411,6 +411,8 @@ final class BaseTest extends TestCase
     }
 
     /**
+     * @requires PHP < 8.3
+     *
      * @see https://github.com/fzaninotto/Faker/issues/265
      */
     public function testOptionalPercentageAndWeight(): void

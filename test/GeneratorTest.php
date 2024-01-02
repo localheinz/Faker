@@ -282,7 +282,7 @@ final class GeneratorTest extends TestCase
             $uniqueGenerator->word(),
         ];
 
-        self::assertEquals($words, $generatedWords);
+        self::assertEqualsCanonicalizing($words, $generatedWords);
     }
 
     public function testUniqueReturnsUniqueGeneratorThatThrowsWhenItCanNotGenerateUniqueValuesAnymore(): void
