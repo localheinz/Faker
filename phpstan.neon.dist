@@ -5,6 +5,8 @@ parameters:
     level: 5
     bootstrapFiles:
         - src/Faker/ORM/Doctrine/backward-compatibility.php
+    excludes_analyse:
+        - src/Faker/Rector/
     paths:
         - src
     tmpDir: .build/phpstan/

@@ -13,6 +13,7 @@
     <projectFiles>
         <directory name="src" />
         <ignoreFiles>
+            <directory name="src/Faker/Rector" />
             <directory name="vendor" />
         </ignoreFiles>
     </projectFiles>
